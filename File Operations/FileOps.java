@@ -57,7 +57,7 @@ public class FileOps{
 			for (int i = 0; i < size; i++){
 				data[i] = a.nextLine(); //read all the data into the array
 			}
-			
+			a.close(); //close the scanner when done with it
 			//display the read data
 			System.out.println ("Read successful. Data read:");
 			for (String i : data){
