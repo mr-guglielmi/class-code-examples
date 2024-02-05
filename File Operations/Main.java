@@ -7,6 +7,7 @@ public class Main {
 	
 	public static void main (String[] args) {
 		FileOps f = new FileOps();
+		System.out.println ("Hello and Welcome!");
 		
 		//comment/uncomment the method calls below to test different functions
 		//f.writeFile();
