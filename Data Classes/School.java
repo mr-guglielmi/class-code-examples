@@ -3,33 +3,35 @@ Author: Mr. Guglielmi
 Date: 06/02/2024
 Description: This class implements a student object for a high school student
 */
+import java.util.ArrayList;
 public class School{
 	
 	//fields
-	private Student[] roster;
-	private int numStudents;
-	
+	private ArrayList<Student> roster;
+		
 	//constructors
 	School(){
-		this.roster = new Student[10];
-		this.numStudents = 0;
+		this.roster = new ArrayList<Student>();
 	}
 	
 	School (Student[] r){
-		this.roster = r;
-		this.numStudents = r.length;
+		this.roster = new ArrayList<Student>();
+		for (Student s : r){ //add the students from the passed array to the list
+			roster.add(s);
+		}
 	}
 	
 	
 	//methods
 	public void enrollStudent(Student s){
-		this.numStudents++;
-		this.roster[numStudents] = s;
+		this.roster.add(s);
 		return;
 	}
 	
 	public Student[] getStudents(){
-		return this.roster;
+		Student[] a = new Student [this.roster.size()]; //set the array type
+		a = this.roster.toArray(a); //convert the list to an array
+		return a;
 	}
 	
 
