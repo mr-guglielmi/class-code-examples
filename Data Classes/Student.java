@@ -58,6 +58,15 @@ public class Student{
 		return;
 	}
 	
+	public String toString(){
+		String s = this.name + "," + this.grade + ",";
+		for (String c : this.courses){
+			s = s + c + ",";
+		}
+		
+		return s.substring(0, s.length()-1); //trim the extra ,
+	}
+	
 	
 }
 	

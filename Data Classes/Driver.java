@@ -33,6 +33,8 @@ public class Driver{
 		
 		School s = new School (new Student[] {s1, s2});
 		
+		
+		
 		int choice = 0;
 		 //implement a menu to demonstrate features
 		while (choice != -1){
