@@ -27,7 +27,7 @@ public class Point{
 	}
 	
 	
-	//getter methods
+	//getter methods to access fields from outside the instance
 	
 	public int getX(){
 		return this.x;
@@ -37,4 +37,8 @@ public class Point{
 		return this.y;
 	}
 	
+	//method do retern a string in the ordered pair format (x,y)
+	public String toString(){
+		return "(" + this.x +"," + this.y + ")";
+	}
 }
