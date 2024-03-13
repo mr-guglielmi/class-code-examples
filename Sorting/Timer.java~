@@ -1,0 +1,42 @@
+
+public class Timer extends Thread{
+
+    private int time;
+    private boolean running;
+
+    Timer (){
+	time = 0;
+	running = true;
+
+    }
+
+
+    public int getTime(){
+	return this.time;
+       
+    }
+
+    public void endTimer(){
+	this.running = false;
+    }
+
+    public boolean isRunning(){
+	return this.running;
+    }
+
+    public void run(){
+
+	while (running){
+
+	    try{
+		sleep(1000);
+	    }
+	    catch (Exception e){
+	    
+	    }
+
+	    this.time++;
+
+	}
+    }
+}

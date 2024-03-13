@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Test{
+
+    public static void main (String[] args){
+	Scanner s = new Scanner (System.in);
+	int i = 0;
+	Timer t = new Timer();
+	t.start();
+	while (i != -1 && t.isRunning()){
+	    i = s.nextInt();
+
+	    if (i == 1){
+		System.out.printf("The time is: %d%n", t.getTime());
+	    }
+
+	    else if (i == 2){
+		t.endTimer();
+	    }
+
+	}
+
+	System.out.println ("Program ended");
+    }
+
+}
