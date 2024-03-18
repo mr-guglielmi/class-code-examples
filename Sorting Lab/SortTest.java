@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class SortTest(){
+public class SortTest{
 	
 	private static void initArray(int[] arr){
 		Random r = new Random();
@@ -10,13 +10,18 @@ public class SortTest(){
 		}
 	}
 	
-	private static void printArrat(int[] arr){
+	private static void printArray(int[] arr){
 		for (int i : arr){
 			System.out.printf ("%d | ", i);
 		}
 	}
 	
 	public static void main(String[] args){
+	
+	int[] a = new int [10];
+	
+	initArray (a);
+	printArray(a);
 	
 	}
 
