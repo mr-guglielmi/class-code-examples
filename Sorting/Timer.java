@@ -1,7 +1,7 @@
 /*
 Author: Mr. Guglielmi
 Date: 12/04/2024
-Description: This class implements a timer thread that can be used to time events in seconds. 
+Description: This class implements a timer thread that can be used to time events in milliseconds. 
 */
 public class Timer extends Thread{
 
@@ -34,7 +34,7 @@ public class Timer extends Thread{
 	while (running){ //so long as the timer is running
 
 	    try{
-		sleep(1000); //wait 1 second
+		sleep(1); //wait 1 millisecond
 	    }
 	    catch (Exception e){
 	    

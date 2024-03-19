@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class SortTest{
 	
+	//fill the array with random numbers
 	private static void initArray(int[] arr){
 		Random r = new Random();
 		
@@ -10,6 +11,7 @@ public class SortTest{
 		}
 	}
 	
+	//display the contents of the array
 	private static void printArray(int[] arr){
 		for (int i : arr){
 			System.out.printf ("%d | ", i);
@@ -24,5 +26,7 @@ public class SortTest{
 	printArray(a);
 	
 	}
+	
+	//call your sorting functions here to test and compare
 
 }
