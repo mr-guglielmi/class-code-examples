@@ -1,0 +1,16 @@
+15
+Gordon Freeman,78.5
+Barney Calhoun,64.8
+Alyx Vance,77.2
+James Vega,88.4
+Marcus Freeman,65.5
+Piper Wright,99.7
+Cassandra Farren,98.2
+Dan Oleson,85.5
+Kratos,32
+Hades,87.3
+Katherine Janeway,72.1
+Shadowheart,63.7
+Greg House,100
+Henry Jekyll,91.1
+Edward Hyde,21.2
