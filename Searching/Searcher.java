@@ -37,7 +37,29 @@ public class Searcher{
 		return index; //return the index of the value. If not found, -1 will be returned
 	}
 	
+	public int binarySearch(int key){
+		sort(); //make sure the array is sorted. 
+		
+		int l = 0, r = this.data.length - 1; //set left and right for the subarray
+		while (l <= r){
+			int m = l + (r - l) /2; //find the middle index
+			
+			if (this.data[m] == key){ // if the middle index is the key, return the index
+				return m;
+			}
+			
+			if (this.data[m] < key){ //if the midpoint is less than the key, drop the lower half
+				l = m + 1;
+			}
+			else {
+				r = m - 1; //otherwisem drop the upper half
+			}
+		}
+		return -1; //if value is not found
+	}
 	
+	//=============================
+	//Sorting methods 
 	
 	//sort the data currently in the instance by using comb sort
 	public void sort(){
