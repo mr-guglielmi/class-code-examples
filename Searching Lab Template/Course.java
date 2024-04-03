@@ -20,7 +20,7 @@ public class Course{
 // 	}
 // 	
 // 	//binary search by grade
-// 	public int findStudent (int key){
+// 	public int findStudent (double key){
 // 	
 // 	
 // 	}
